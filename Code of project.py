@@ -1,5 +1,5 @@
 import openai
-openai.api_key = “sk-advf”
+openai.api_key = “key”
 def chat_with_gpt(prompt):
        response = openai.ChatCompletion.create(
                 model = “gpt-3.5-turbo”,
