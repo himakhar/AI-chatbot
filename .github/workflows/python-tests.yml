@@ -8,6 +8,11 @@ on:
 
 jobs:
   test:
+    # Minimal permissions — does NOT request the `workflow` permission.
+    permissions:
+      contents: read
+      checks: write
+      workflow: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
